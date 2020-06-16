@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+
+/*table#data tr th:first-child {
+  width: 12%;
+  min-width: 12%;
+  max-width: 12%;
+  word-break: break-all;
+}*/
+
+table#data tr th:third-child {
+  width: 10%;
+  min-width: 10%;
+  max-width: 10%;
+  word-break: break-all;
+}
+
+.colortr {
+  background-color: #D6EAF8;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Compliance Check Report</h2>
+<img src="logo.jpg">
+<p>StarHub </p>
+
+
+
+<!-- nodata1 column contain fail data -->
+ 
+<!-- hostname contain pass data -->
+<!-- nodata2 contain error data -->
+<!-- benchmarkdata1 contain notselected data -->
+
+ 
+ 
+<!--   -->
+
+
+<!-- General Table -->
+<table id="general">
+  <tr class="colortr">
+    <th colspan="4">General Information:</th>
+  </tr>
+  <tr>
+    <th>Host Name:</th>
+    <td>rhel6</td>
+    <th>Executation Date:</th>
+    <td>06/16/2020 15:38:30</td>
+  </tr>
+  <tr>
+    <th>IP Address:</th>
+    <td>10.6.1.154</td>
+    <th>Benchmark Profiles</th>
+    <td>Level 1 - Server</td>
+  </tr>
+  <tr>
+    <th>Compliance Rules:</th>
+    <!-- <td>[{u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure mounting of cramfs filesystems is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.1.1_Ensure_mounting_of_cramfs_filesystems_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.1.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure mounting of freevxfs filesystems is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.1.2_Ensure_mounting_of_freevxfs_filesystems_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.1.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure mounting of jffs2 filesystems is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.1.3_Ensure_mounting_of_jffs2_filesystems_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.1.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure mounting of hfs filesystems is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.1.4_Ensure_mounting_of_hfs_filesystems_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.1.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure mounting of hfsplus filesystems is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.1.5_Ensure_mounting_of_hfsplus_filesystems_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.1.5', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure mounting of squashfs filesystems is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.1.6_Ensure_mounting_of_squashfs_filesystems_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.1.6', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure mounting of udf filesystems is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.1.7_Ensure_mounting_of_udf_filesystems_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.1.7', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure mounting of FAT filesystems is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.1.8_Ensure_mounting_of_FAT_filesystems_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.1.8', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure nodev option set on /tmp partition', u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.3_Ensure_nodev_option_set_on_tmp_partition', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure nosuid option set on /tmp partition', u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.4_Ensure_nosuid_option_set_on_tmp_partition', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure noexec option set on /tmp partition', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.5_Ensure_noexec_option_set_on_tmp_partition', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.5', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure nodev option set on /var/tmp partition', u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.8_Ensure_nodev_option_set_on_vartmp_partition', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.8', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure nosuid option set on /var/tmp partition', u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.9_Ensure_nosuid_option_set_on_vartmp_partition', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.9', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure noexec option set on /var/tmp partition', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.10_Ensure_noexec_option_set_on_vartmp_partition', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.10', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure nodev option set on /home partition', u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.14_Ensure_nodev_option_set_on_home_partition', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.14', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure nodev option set on /dev/shm partition', u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.15_Ensure_nodev_option_set_on_devshm_partition', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.15', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure nosuid option set on /dev/shm partition', u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.16_Ensure_nosuid_option_set_on_devshm_partition', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.16', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure noexec option set on /dev/shm partition', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.17_Ensure_noexec_option_set_on_devshm_partition', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.17', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure sticky bit is set on all world-writable directories', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.21_Ensure_sticky_bit_is_set_on_all_world-writable_directories', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.21', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Disable Automounting', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.1.22_Disable_Automounting', u'profiledata1': u'Level 1 - Server', u'session': u'1.1.22', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure gpgcheck is globally activated', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.2.2_Ensure_gpgcheck_is_globally_activated', u'profiledata1': u'Level 1 - Server', u'session': u'1.2.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure AIDE is installed', u'reference': u',AIDE stable manual: http://aide.sourceforge.net/stable/manual.html', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.3.1_Ensure_AIDE_is_installed', u'profiledata1': u'Level 1 - Server', u'session': u'1.3.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure filesystem integrity is regularly checked', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.3.2_Ensure_filesystem_integrity_is_regularly_checked', u'profiledata1': u'Level 1 - Server', u'session': u'1.3.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on bootloader config are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.4.1_Ensure_permissions_on_bootloader_config_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'1.4.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure bootloader password is set', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.4.2_Ensure_bootloader_password_is_set', u'profiledata1': u'Level 1 - Server', u'session': u'1.4.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure authentication required for single user mode', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.4.3_Ensure_authentication_required_for_single_user_mode', u'profiledata1': u'Level 1 - Server', u'session': u'1.4.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure interactive boot is not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.4.4_Ensure_interactive_boot_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'1.4.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure core dumps are restricted', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.5.1_Ensure_core_dumps_are_restricted', u'profiledata1': u'Level 1 - Server', u'session': u'1.5.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'informational', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure XD/NX support is enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.5.2_Ensure_XDNX_support_is_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'1.5.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure address space layout randomization (ASLR) is enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.5.3_Ensure_address_space_layout_randomization_ASLR_is_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'1.5.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure prelink is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.5.4_Ensure_prelink_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'1.5.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure message of the day is configured properly', u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.7.1.1_Ensure_message_of_the_day_is_configured_properly', u'profiledata1': u'Level 1 - Server', u'session': u'1.7.1.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'informational', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure local login warning banner is configured properly', u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.7.1.2_Ensure_local_login_warning_banner_is_configured_properly', u'profiledata1': u'Level 1 - Server', u'session': u'1.7.1.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'informational', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure remote login warning banner is configured properly', u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.7.1.3_Ensure_remote_login_warning_banner_is_configured_properly', u'profiledata1': u'Level 1 - Server', u'session': u'1.7.1.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'informational', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/motd are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.7.1.4_Ensure_permissions_on_etcmotd_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'1.7.1.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/issue are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.7.1.5_Ensure_permissions_on_etcissue_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'1.7.1.5', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'informational', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/issue.net are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.7.1.6_Ensure_permissions_on_etcissue.net_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'1.7.1.6', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure GDM login banner is configured', u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.7.2_Ensure_GDM_login_banner_is_configured', u'profiledata1': u'Level 1 - Server', u'session': u'1.7.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure chargen services are not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.1.1_Ensure_chargen_services_are_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.1.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure daytime services are not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.1.2_Ensure_daytime_services_are_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.1.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure discard services are not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.1.3_Ensure_discard_services_are_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.1.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure echo services are not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.1.4_Ensure_echo_services_are_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.1.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure time services are not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.1.5_Ensure_time_services_are_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.1.5', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure rsh server is not enabled', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.1.6_Ensure_rsh_server_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.1.6', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure talk server is not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.1.7_Ensure_talk_server_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.1.7', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure telnet server is not enabled', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.1.8_Ensure_telnet_server_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.1.8', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure tftp server is not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.1.9_Ensure_tftp_server_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.1.9', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure rsync service is not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.1.10_Ensure_rsync_service_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.1.10', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure xinetd is not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.1.11_Ensure_xinetd_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.1.11', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'informational', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure time synchronization is in use', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.1.1_Ensure_time_synchronization_is_in_use', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.1.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure ntp is configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.1.2_Ensure_ntp_is_configured', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.1.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure chrony is configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.1.3_Ensure_chrony_is_configured', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.1.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure X Window System is not installed', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.2_Ensure_X_Window_System_is_not_installed', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure Avahi Server is not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.3_Ensure_Avahi_Server_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure CUPS is not enabled', u'reference': u',More detailed documentation on CUPS is available at the project homepage at http://www.cups.org. ', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.4_Ensure_CUPS_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure DHCP Server is not enabled', u'reference': u',More detailed documentation on DHCP is available at http://www.isc.org/software/dhcp. ', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.5_Ensure_DHCP_Server_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.5', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure LDAP server is not enabled', u'reference': u',For more detailed documentation on OpenLDAP, go to the project homepage at http://www.openldap.org.', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.6_Ensure_LDAP_server_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.6', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure NFS and RPC are not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.7_Ensure_NFS_and_RPC_are_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.7', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure DNS Server is not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.8_Ensure_DNS_Server_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.8', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure FTP Server is not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.9_Ensure_FTP_Server_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.9', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure HTTP server is not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.10_Ensure_HTTP_server_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.10', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure IMAP and POP3 server is not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.11_Ensure_IMAP_and_POP3_server_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.11', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure Samba is not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.12_Ensure_Samba_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.12', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure HTTP Proxy Server is not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.13_Ensure_HTTP_Proxy_Server_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.13', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SNMP Server is not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.14_Ensure_SNMP_Server_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.14', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure mail transfer agent is configured for local-only mode', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.15_Ensure_mail_transfer_agent_is_configured_for_local-only_mode', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.15', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure NIS Server is not enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.2.16_Ensure_NIS_Server_is_not_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'2.2.16', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure NIS Client is not installed', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.3.1_Ensure_NIS_Client_is_not_installed', u'profiledata1': u'Level 1 - Server', u'session': u'2.3.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure rsh client is not installed', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.3.2_Ensure_rsh_client_is_not_installed', u'profiledata1': u'Level 1 - Server', u'session': u'2.3.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure talk client is not installed', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.3.3_Ensure_talk_client_is_not_installed', u'profiledata1': u'Level 1 - Server', u'session': u'2.3.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure telnet client is not installed', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.3.4_Ensure_telnet_client_is_not_installed', u'profiledata1': u'Level 1 - Server', u'session': u'2.3.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure LDAP client is not installed', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.3.5_Ensure_LDAP_client_is_not_installed', u'profiledata1': u'Level 1 - Server', u'session': u'2.3.5', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure IP forwarding is disabled', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.1.1_Ensure_IP_forwarding_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'3.1.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure packet redirect sending is disabled', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.1.2_Ensure_packet_redirect_sending_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'3.1.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure source routed packets are not accepted', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.2.1_Ensure_source_routed_packets_are_not_accepted', u'profiledata1': u'Level 1 - Server', u'session': u'3.2.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure ICMP redirects are not accepted', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.2.2_Ensure_ICMP_redirects_are_not_accepted', u'profiledata1': u'Level 1 - Server', u'session': u'3.2.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure secure ICMP redirects are not accepted', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.2.3_Ensure_secure_ICMP_redirects_are_not_accepted', u'profiledata1': u'Level 1 - Server', u'session': u'3.2.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure suspicious packets are logged', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.2.4_Ensure_suspicious_packets_are_logged', u'profiledata1': u'Level 1 - Server', u'session': u'3.2.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure broadcast ICMP requests are ignored', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.2.5_Ensure_broadcast_ICMP_requests_are_ignored', u'profiledata1': u'Level 1 - Server', u'session': u'3.2.5', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure bogus ICMP responses are ignored', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.2.6_Ensure_bogus_ICMP_responses_are_ignored', u'profiledata1': u'Level 1 - Server', u'session': u'3.2.6', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure Reverse Path Filtering is enabled', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.2.7_Ensure_Reverse_Path_Filtering_is_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'3.2.7', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure TCP SYN Cookies is enabled', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.2.8_Ensure_TCP_SYN_Cookies_is_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'3.2.8', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure IPv6 router advertisements are not accepted', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.3.1_Ensure_IPv6_router_advertisements_are_not_accepted', u'profiledata1': u'Level 1 - Server', u'session': u'3.3.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure IPv6 redirects are not accepted', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.3.2_Ensure_IPv6_redirects_are_not_accepted', u'profiledata1': u'Level 1 - Server', u'session': u'3.3.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'informational', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure IPv6 is disabled', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.3.3_Ensure_IPv6_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'3.3.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure TCP Wrappers is installed', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.4.1_Ensure_TCP_Wrappers_is_installed', u'profiledata1': u'Level 1 - Server', u'session': u'3.4.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure /etc/hosts.allow is configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.4.2_Ensure_etchosts.allow_is_configured', u'profiledata1': u'Level 1 - Server', u'session': u'3.4.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure /etc/hosts.deny is configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.4.3_Ensure_etchosts.deny_is_configured', u'profiledata1': u'Level 1 - Server', u'session': u'3.4.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/hosts.allow are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.4.4_Ensure_permissions_on_etchosts.allow_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'3.4.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/hosts.deny are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.4.5_Ensure_permissions_on_etchosts.deny_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'3.4.5', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'informational', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure DCCP is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.5.1_Ensure_DCCP_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'3.5.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'informational', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SCTP is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.5.2_Ensure_SCTP_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'3.5.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'informational', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure RDS is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.5.3_Ensure_RDS_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'3.5.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'informational', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure TIPC is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.5.4_Ensure_TIPC_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'3.5.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure iptables is installed', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.6.1_Ensure_iptables_is_installed', u'profiledata1': u'Level 1 - Server', u'session': u'3.6.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure default deny firewall policy', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.6.2_Ensure_default_deny_firewall_policy', u'profiledata1': u'Level 1 - Server', u'session': u'3.6.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure loopback traffic is configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.6.3_Ensure_loopback_traffic_is_configured', u'profiledata1': u'Level 1 - Server', u'session': u'3.6.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure firewall rules exist for all open ports', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.6.5_Ensure_firewall_rules_exist_for_all_open_ports', u'profiledata1': u'Level 1 - Server', u'session': u'3.6.5', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure rsyslog Service is enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_4.2.1.1_Ensure_rsyslog_Service_is_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'4.2.1.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure rsyslog default file permissions configured', u'reference': u',See the rsyslog.conf(5) man page for more information.', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_4.2.1.3_Ensure_rsyslog_default_file_permissions_configured', u'profiledata1': u'Level 1 - Server', u'session': u'4.2.1.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure rsyslog is configured to send logs to a remote log host', u'reference': u',See the rsyslog.conf(5) man page for more information.', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_4.2.1.4_Ensure_rsyslog_is_configured_to_send_logs_to_a_remote_log_host', u'profiledata1': u'Level 1 - Server', u'session': u'4.2.1.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure syslog-ng service is enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_4.2.2.1_Ensure_syslog-ng_service_is_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'4.2.2.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure syslog-ng default file permissions configured', u'reference': u',See the syslog-ng man pages for more information.', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_4.2.2.3_Ensure_syslog-ng_default_file_permissions_configured', u'profiledata1': u'Level 1 - Server', u'session': u'4.2.2.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure rsyslog or syslog-ng is installed', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_4.2.3_Ensure_rsyslog_or_syslog-ng_is_installed', u'profiledata1': u'Level 1 - Server', u'session': u'4.2.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on all logfiles are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_4.2.4_Ensure_permissions_on_all_logfiles_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'4.2.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure cron daemon is enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.1.1_Ensure_cron_daemon_is_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'5.1.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/crontab are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.1.2_Ensure_permissions_on_etccrontab_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'5.1.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/cron.hourly are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.1.3_Ensure_permissions_on_etccron.hourly_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'5.1.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/cron.daily are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.1.4_Ensure_permissions_on_etccron.daily_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'5.1.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/cron.weekly are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.1.5_Ensure_permissions_on_etccron.weekly_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'5.1.5', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/cron.monthly are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.1.6_Ensure_permissions_on_etccron.monthly_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'5.1.6', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/cron.d are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.1.7_Ensure_permissions_on_etccron.d_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'5.1.7', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure at/cron is restricted to authorized users', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.1.8_Ensure_atcron_is_restricted_to_authorized_users', u'profiledata1': u'Level 1 - Server', u'session': u'5.1.8', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/ssh/sshd_config are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.1_Ensure_permissions_on_etcsshsshd_config_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SSH Protocol is set to 2', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.2_Ensure_SSH_Protocol_is_set_to_2', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SSH LogLevel is set to INFO', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.3_Ensure_SSH_LogLevel_is_set_to_INFO', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SSH X11 forwarding is disabled', u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.4_Ensure_SSH_X11_forwarding_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SSH MaxAuthTries is set to 4 or less', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.5_Ensure_SSH_MaxAuthTries_is_set_to_4_or_less', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.5', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SSH IgnoreRhosts is enabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.6_Ensure_SSH_IgnoreRhosts_is_enabled', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.6', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SSH HostbasedAuthentication is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.7_Ensure_SSH_HostbasedAuthentication_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.7', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SSH root login is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.8_Ensure_SSH_root_login_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.8', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SSH PermitEmptyPasswords is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.9_Ensure_SSH_PermitEmptyPasswords_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.9', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SSH PermitUserEnvironment is disabled', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.10_Ensure_SSH_PermitUserEnvironment_is_disabled', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.10', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure only approved ciphers are used', u'reference': u',For more information on the Counter mode algorithms, read RFC4344 at http://www.ietf.org/rfc/rfc4344.txt', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.11_Ensure_only_approved_ciphers_are_used', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.11', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure only approved MAC algorithms are used', u'reference': u',More information on SSH downgrade attacks can be found here: http://www.mitls.org/pages/attacks/SLOTH', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.12_Ensure_only_approved_MAC_algorithms_are_used', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.12', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SSH Idle Timeout Interval is configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.13_Ensure_SSH_Idle_Timeout_Interval_is_configured', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.13', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SSH LoginGraceTime is set to one minute or less', u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.14_Ensure_SSH_LoginGraceTime_is_set_to_one_minute_or_less', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.14', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SSH access is limited', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.15_Ensure_SSH_access_is_limited', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.15', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure SSH warning banner is configured', u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.2.16_Ensure_SSH_warning_banner_is_configured', u'profiledata1': u'Level 1 - Server', u'session': u'5.2.16', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure password creation requirements are configured', u'reference': u',', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.3.1_Ensure_password_creation_requirements_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'5.3.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure lockout for failed password attempts is configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.3.2_Ensure_lockout_for_failed_password_attempts_is_configured', u'profiledata1': u'Level 1 - Server', u'session': u'5.3.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure password reuse is limited', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.3.3_Ensure_password_reuse_is_limited', u'profiledata1': u'Level 1 - Server', u'session': u'5.3.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure password hashing algorithm is SHA-512', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.3.4_Ensure_password_hashing_algorithm_is_SHA-512', u'profiledata1': u'Level 1 - Server', u'session': u'5.3.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure password expiration is 90 days or less', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.4.1.1_Ensure_password_expiration_is_90_days_or_less', u'profiledata1': u'Level 1 - Server', u'session': u'5.4.1.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure minimum days between password changes is 7 or more', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.4.1.2_Ensure_minimum_days_between_password_changes_is_7_or_more', u'profiledata1': u'Level 1 - Server', u'session': u'5.4.1.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure password expiration warning days is 7 or more', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.4.1.3_Ensure_password_expiration_warning_days_is_7_or_more', u'profiledata1': u'Level 1 - Server', u'session': u'5.4.1.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure inactive password lock is 30 days or less', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.4.1.4_Ensure_inactive_password_lock_is_30_days_or_less', u'profiledata1': u'Level 1 - Server', u'session': u'5.4.1.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure system accounts are non-login', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.4.2_Ensure_system_accounts_are_non-login', u'profiledata1': u'Level 1 - Server', u'session': u'5.4.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure default group for the root account is GID 0', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.4.3_Ensure_default_group_for_the_root_account_is_GID_0', u'profiledata1': u'Level 1 - Server', u'session': u'5.4.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure default user umask is 027 or more restrictive', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.4.4_Ensure_default_user_umask_is_027_or_more_restrictive', u'profiledata1': u'Level 1 - Server', u'session': u'5.4.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure access to the su command is restricted', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_5.6_Ensure_access_to_the_su_command_is_restricted', u'profiledata1': u'Level 1 - Server', u'session': u'5.6', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/passwd are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.1.2_Ensure_permissions_on_etcpasswd_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'6.1.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/shadow are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.1.3_Ensure_permissions_on_etcshadow_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'6.1.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/group are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.1.4_Ensure_permissions_on_etcgroup_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'6.1.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/gshadow are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.1.5_Ensure_permissions_on_etcgshadow_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'6.1.5', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/passwd- are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.1.6_Ensure_permissions_on_etcpasswd-_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'6.1.6', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/shadow- are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.1.7_Ensure_permissions_on_etcshadow-_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'6.1.7', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/group- are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.1.8_Ensure_permissions_on_etcgroup-_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'6.1.8', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure permissions on /etc/gshadow- are configured', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.1.9_Ensure_permissions_on_etcgshadow-_are_configured', u'profiledata1': u'Level 1 - Server', u'session': u'6.1.9', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure no world writable files exist', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.1.10_Ensure_no_world_writable_files_exist', u'profiledata1': u'Level 1 - Server', u'session': u'6.1.10', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure no unowned files or directories exist', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.1.11_Ensure_no_unowned_files_or_directories_exist', u'profiledata1': u'Level 1 - Server', u'session': u'6.1.11', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure no ungrouped files or directories exist', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.1.12_Ensure_no_ungrouped_files_or_directories_exist', u'profiledata1': u'Level 1 - Server', u'session': u'6.1.12', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure password fields are not empty', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.1_Ensure_password_fields_are_not_empty', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.1', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure no legacy + entries exist in /etc/passwd', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.2_Ensure_no_legacy__entries_exist_in_etcpasswd', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.2', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure no legacy + entries exist in /etc/shadow', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.3_Ensure_no_legacy__entries_exist_in_etcshadow', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.3', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure no legacy + entries exist in /etc/group', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.4_Ensure_no_legacy__entries_exist_in_etcgroup', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.4', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure root is the only UID 0 account', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.5_Ensure_root_is_the_only_UID_0_account', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.5', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure root PATH Integrity', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.6_Ensure_root_PATH_Integrity', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.6', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u"Ensure all users' home directories exist", u'reference': u'CCE-NONE', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.7_Ensure_all_users_home_directories_exist', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.7', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u"Ensure users' home directories permissions are 750 or more restrictive", u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.8_Ensure_users_home_directories_permissions_are_750_or_more_restrictive', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.8', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure users own their home directories', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.9_Ensure_users_own_their_home_directories', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.9', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u"Ensure users' dot files are not group or world writable", u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.10_Ensure_users_dot_files_are_not_group_or_world_writable', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.10', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure no users have .forward files', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.11_Ensure_no_users_have_.forward_files', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.11', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure no users have .netrc files', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.12_Ensure_no_users_have_.netrc_files', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.12', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u"Ensure users' .netrc Files are not group or world accessible", u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.13_Ensure_users_.netrc_Files_are_not_group_or_world_accessible', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.13', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure no users have .rhosts files', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.14_Ensure_no_users_have_.rhosts_files', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.14', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure all groups in /etc/passwd exist in /etc/group', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.15_Ensure_all_groups_in_etcpasswd_exist_in_etcgroup', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.15', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure no duplicate UIDs exist', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.16_Ensure_no_duplicate_UIDs_exist', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.16', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure no duplicate GIDs exist', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.17_Ensure_no_duplicate_GIDs_exist', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.17', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure no duplicate user names exist', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.18_Ensure_no_duplicate_user_names_exist', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.18', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server', u'description': u'Ensure no duplicate group names exist', u'reference': u'', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_2.0.2_CIS_Red_Hat_Enterprise_Linux_6_Benchmark', u'cisversion': u'2.0.2', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_6.2.19_Ensure_no_duplicate_group_names_exist', u'profiledata1': u'Level 1 - Server', u'session': u'6.2.19', u'benchmarkdata2': u'CIS Red Hat Enterprise Linux 6 Benchmark', u'date': u'06/16/2020 15:38:30', u'hostname': u'rhel6'}, {u'status': None, u'nodata1': u'Fail: 71', u'nodata2': u'Error: 0', u'profiledata2': None, u'description': None, u'reference': None, u'benchmarkdata1': u'Not Selected: 64', u'benchmarkdata3': None, u'cisversion': u'Unknown: 0', u'detail': None, u'profiledata1': None, u'session': None, u'benchmarkdata2': None, u'date': u'Total', u'hostname': u'Pass: 89'}, {u'status': None, u'nodata1': u'Score: 56%', u'nodata2': None, u'profiledata2': None, u'description': None, u'reference': None, u'benchmarkdata1': None, u'benchmarkdata3': None, u'cisversion': None, u'detail': None, u'profiledata1': None, u'session': None, u'benchmarkdata2': None, u'date': u'Actual Pass: 89.0', u'hostname': u'Maximum Possible: 160.0'}]</td> -->
+    <td>89 / 160</td>
+    <th></th>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Non-Compliance Rules:</th>
+    <td>71 / 160</td>
+    <th></th>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Not Selected:</th>
+    <td>64</td>
+    <th></th>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Error:</th>
+    <td>0</td>
+    <th></th>
+    <td></td>
+  </tr>
+</table>
+</br>
+<!-- Data Table -->
+<table id="data">
+  <tr class="colortr">
+    <th style="width:7%">No.</th>
+    <th style="width:53%">Task</th>
+    <th style="width:10%">True/False</th>
+    <th style="width:30%">Remarks</th>
+  </tr>
+  <tr class="colortr">
+    <th colspan="4">Compliance Summary:</th>
+  </tr>
+            
+          
+          
+          
+          
+          
+          
+          
+            <tr>
+        <td>1</td>
+        <td>Ensure nodev option set on /tmp partition</td>
+        <td>TRUE</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+            <tr>
+        <td>2</td>
+        <td>Ensure nosuid option set on /tmp partition</td>
+        <td>TRUE</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+            <tr>
+        <td>3</td>
+        <td>Ensure noexec option set on /tmp partition</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>4</td>
+        <td>Ensure nodev option set on /var/tmp partition</td>
+        <td>TRUE</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+            <tr>
+        <td>5</td>
+        <td>Ensure nosuid option set on /var/tmp partition</td>
+        <td>TRUE</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+            <tr>
+        <td>6</td>
+        <td>Ensure noexec option set on /var/tmp partition</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>7</td>
+        <td>Ensure nodev option set on /home partition</td>
+        <td>TRUE</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+          
+          
+          
+            <tr>
+        <td>8</td>
+        <td>Ensure sticky bit is set on all world-writable directories</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+            <tr>
+        <td>9</td>
+        <td>Ensure permissions on bootloader config are configured</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+          
+            <tr>
+        <td>10</td>
+        <td>Ensure address space layout randomization (ASLR) is enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>11</td>
+        <td>Ensure message of the day is configured properly</td>
+        <td>TRUE</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+          
+          
+          
+            <tr>
+        <td>12</td>
+        <td>Ensure permissions on /etc/issue are configured</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>13</td>
+        <td>Ensure GDM login banner is configured</td>
+        <td>TRUE</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+            <tr>
+        <td>14</td>
+        <td>Ensure chargen services are not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>15</td>
+        <td>Ensure daytime services are not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>16</td>
+        <td>Ensure discard services are not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>17</td>
+        <td>Ensure echo services are not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>18</td>
+        <td>Ensure time services are not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>19</td>
+        <td>Ensure rsh server is not enabled</td>
+        <td>TRUE</td>
+        <td>,</td>
+      </tr>
+              
+            <tr>
+        <td>20</td>
+        <td>Ensure talk server is not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>21</td>
+        <td>Ensure telnet server is not enabled</td>
+        <td>TRUE</td>
+        <td>,</td>
+      </tr>
+              
+            <tr>
+        <td>22</td>
+        <td>Ensure tftp server is not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>23</td>
+        <td>Ensure rsync service is not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>24</td>
+        <td>Ensure xinetd is not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>25</td>
+        <td>Ensure ntp is configured</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>26</td>
+        <td>Ensure chrony is configured</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>27</td>
+        <td>Ensure Avahi Server is not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>28</td>
+        <td>Ensure DHCP Server is not enabled</td>
+        <td>TRUE</td>
+        <td>,More detailed documentation on DHCP is available at http://www.isc.org/software/dhcp. </td>
+      </tr>
+              
+            <tr>
+        <td>29</td>
+        <td>Ensure LDAP server is not enabled</td>
+        <td>TRUE</td>
+        <td>,For more detailed documentation on OpenLDAP, go to the project homepage at http://www.openldap.org.</td>
+      </tr>
+              
+          
+            <tr>
+        <td>30</td>
+        <td>Ensure DNS Server is not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>31</td>
+        <td>Ensure FTP Server is not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>32</td>
+        <td>Ensure HTTP server is not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>33</td>
+        <td>Ensure IMAP and POP3 server is not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>34</td>
+        <td>Ensure Samba is not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>35</td>
+        <td>Ensure HTTP Proxy Server is not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>36</td>
+        <td>Ensure SNMP Server is not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>37</td>
+        <td>Ensure mail transfer agent is configured for local-only mode</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>38</td>
+        <td>Ensure NIS Server is not enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>39</td>
+        <td>Ensure rsh client is not installed</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>40</td>
+        <td>Ensure talk client is not installed</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>41</td>
+        <td>Ensure telnet client is not installed</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>42</td>
+        <td>Ensure LDAP client is not installed</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>43</td>
+        <td>Ensure IP forwarding is disabled</td>
+        <td>TRUE</td>
+        <td>,</td>
+      </tr>
+              
+          
+            <tr>
+        <td>44</td>
+        <td>Ensure source routed packets are not accepted</td>
+        <td>TRUE</td>
+        <td>,</td>
+      </tr>
+              
+          
+          
+          
+            <tr>
+        <td>45</td>
+        <td>Ensure broadcast ICMP requests are ignored</td>
+        <td>TRUE</td>
+        <td>,</td>
+      </tr>
+              
+            <tr>
+        <td>46</td>
+        <td>Ensure bogus ICMP responses are ignored</td>
+        <td>TRUE</td>
+        <td>,</td>
+      </tr>
+              
+          
+            <tr>
+        <td>47</td>
+        <td>Ensure TCP SYN Cookies is enabled</td>
+        <td>TRUE</td>
+        <td>,</td>
+      </tr>
+              
+          
+          
+          
+            <tr>
+        <td>48</td>
+        <td>Ensure TCP Wrappers is installed</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>49</td>
+        <td>Ensure /etc/hosts.allow is configured</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>50</td>
+        <td>Ensure permissions on /etc/hosts.allow are configured</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>51</td>
+        <td>Ensure permissions on /etc/hosts.deny are configured</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+            <tr>
+        <td>52</td>
+        <td>Ensure iptables is installed</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+            <tr>
+        <td>53</td>
+        <td>Ensure rsyslog Service is enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+            <tr>
+        <td>54</td>
+        <td>Ensure syslog-ng service is enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>55</td>
+        <td>Ensure syslog-ng default file permissions configured</td>
+        <td>TRUE</td>
+        <td>,See the syslog-ng man pages for more information.</td>
+      </tr>
+              
+            <tr>
+        <td>56</td>
+        <td>Ensure rsyslog or syslog-ng is installed</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>57</td>
+        <td>Ensure cron daemon is enabled</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+          
+          
+          
+            <tr>
+        <td>58</td>
+        <td>Ensure permissions on /etc/ssh/sshd_config are configured</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>59</td>
+        <td>Ensure SSH Protocol is set to 2</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            <tr>
+        <td>60</td>
+        <td>Ensure password hashing algorithm is SHA-512</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+            <tr>
+        <td>61</td>
+        <td>Ensure password expiration warning days is 7 or more</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>62</td>
+        <td>Ensure system accounts are non-login</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>63</td>
+        <td>Ensure default group for the root account is GID 0</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+            <tr>
+        <td>64</td>
+        <td>Ensure permissions on /etc/passwd are configured</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>65</td>
+        <td>Ensure permissions on /etc/shadow are configured</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>66</td>
+        <td>Ensure permissions on /etc/group are configured</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>67</td>
+        <td>Ensure permissions on /etc/gshadow are configured</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>68</td>
+        <td>Ensure permissions on /etc/shadow- are configured</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>69</td>
+        <td>Ensure permissions on /etc/gshadow- are configured</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>70</td>
+        <td>Ensure no world writable files exist</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>71</td>
+        <td>Ensure no unowned files or directories exist</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>72</td>
+        <td>Ensure no ungrouped files or directories exist</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>73</td>
+        <td>Ensure password fields are not empty</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>74</td>
+        <td>Ensure no legacy + entries exist in /etc/passwd</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>75</td>
+        <td>Ensure no legacy + entries exist in /etc/shadow</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>76</td>
+        <td>Ensure no legacy + entries exist in /etc/group</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>77</td>
+        <td>Ensure root is the only UID 0 account</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>78</td>
+        <td>Ensure root PATH Integrity</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>79</td>
+        <td>Ensure users' home directories permissions are 750 or more restrictive</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>80</td>
+        <td>Ensure users own their home directories</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>81</td>
+        <td>Ensure users' dot files are not group or world writable</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>82</td>
+        <td>Ensure no users have .forward files</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>83</td>
+        <td>Ensure no users have .netrc files</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>84</td>
+        <td>Ensure users' .netrc Files are not group or world accessible</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>85</td>
+        <td>Ensure no users have .rhosts files</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>86</td>
+        <td>Ensure no duplicate UIDs exist</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>87</td>
+        <td>Ensure no duplicate GIDs exist</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>88</td>
+        <td>Ensure no duplicate user names exist</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>89</td>
+        <td>Ensure no duplicate group names exist</td>
+        <td>TRUE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+  
+  
+  <tr class="colortr">
+    <th colspan="4">Non-Compliance Summary:</th>
+  </tr>
+              <tr>
+        <td>1</td>
+        <td>Ensure mounting of cramfs filesystems is disabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>2</td>
+        <td>Ensure mounting of freevxfs filesystems is disabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>3</td>
+        <td>Ensure mounting of jffs2 filesystems is disabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>4</td>
+        <td>Ensure mounting of hfs filesystems is disabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>5</td>
+        <td>Ensure mounting of hfsplus filesystems is disabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>6</td>
+        <td>Ensure mounting of squashfs filesystems is disabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>7</td>
+        <td>Ensure mounting of udf filesystems is disabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>8</td>
+        <td>Ensure mounting of FAT filesystems is disabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+          
+          
+          
+            <tr>
+        <td>9</td>
+        <td>Ensure nodev option set on /dev/shm partition</td>
+        <td>FALSE</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+            <tr>
+        <td>10</td>
+        <td>Ensure nosuid option set on /dev/shm partition</td>
+        <td>FALSE</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+            <tr>
+        <td>11</td>
+        <td>Ensure noexec option set on /dev/shm partition</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>12</td>
+        <td>Disable Automounting</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>13</td>
+        <td>Ensure gpgcheck is globally activated</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>14</td>
+        <td>Ensure AIDE is installed</td>
+        <td>FALSE</td>
+        <td>,AIDE stable manual: http://aide.sourceforge.net/stable/manual.html</td>
+      </tr>
+              
+            <tr>
+        <td>15</td>
+        <td>Ensure filesystem integrity is regularly checked</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>16</td>
+        <td>Ensure bootloader password is set</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>17</td>
+        <td>Ensure authentication required for single user mode</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>18</td>
+        <td>Ensure interactive boot is not enabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>19</td>
+        <td>Ensure core dumps are restricted</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+            <tr>
+        <td>20</td>
+        <td>Ensure prelink is disabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            <tr>
+        <td>21</td>
+        <td>Ensure X Window System is not installed</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>22</td>
+        <td>Ensure CUPS is not enabled</td>
+        <td>FALSE</td>
+        <td>,More detailed documentation on CUPS is available at the project homepage at http://www.cups.org. </td>
+      </tr>
+              
+          
+          
+            <tr>
+        <td>23</td>
+        <td>Ensure NFS and RPC are not enabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            <tr>
+        <td>24</td>
+        <td>Ensure NIS Client is not installed</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+          
+            <tr>
+        <td>25</td>
+        <td>Ensure packet redirect sending is disabled</td>
+        <td>FALSE</td>
+        <td>,</td>
+      </tr>
+              
+          
+            <tr>
+        <td>26</td>
+        <td>Ensure ICMP redirects are not accepted</td>
+        <td>FALSE</td>
+        <td>,</td>
+      </tr>
+              
+            <tr>
+        <td>27</td>
+        <td>Ensure secure ICMP redirects are not accepted</td>
+        <td>FALSE</td>
+        <td>,</td>
+      </tr>
+              
+            <tr>
+        <td>28</td>
+        <td>Ensure suspicious packets are logged</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+            <tr>
+        <td>29</td>
+        <td>Ensure Reverse Path Filtering is enabled</td>
+        <td>FALSE</td>
+        <td>,</td>
+      </tr>
+              
+          
+            <tr>
+        <td>30</td>
+        <td>Ensure IPv6 router advertisements are not accepted</td>
+        <td>FALSE</td>
+        <td>,</td>
+      </tr>
+              
+            <tr>
+        <td>31</td>
+        <td>Ensure IPv6 redirects are not accepted</td>
+        <td>FALSE</td>
+        <td>,</td>
+      </tr>
+              
+          
+          
+          
+            <tr>
+        <td>32</td>
+        <td>Ensure /etc/hosts.deny is configured</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+          
+          
+          
+            <tr>
+        <td>33</td>
+        <td>Ensure default deny firewall policy</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>34</td>
+        <td>Ensure loopback traffic is configured</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>35</td>
+        <td>Ensure firewall rules exist for all open ports</td>
+        <td>FALSE</td>
+        <td>,</td>
+      </tr>
+              
+          
+            <tr>
+        <td>36</td>
+        <td>Ensure rsyslog default file permissions configured</td>
+        <td>FALSE</td>
+        <td>,See the rsyslog.conf(5) man page for more information.</td>
+      </tr>
+              
+            <tr>
+        <td>37</td>
+        <td>Ensure rsyslog is configured to send logs to a remote log host</td>
+        <td>FALSE</td>
+        <td>,See the rsyslog.conf(5) man page for more information.</td>
+      </tr>
+              
+          
+          
+          
+            <tr>
+        <td>38</td>
+        <td>Ensure permissions on all logfiles are configured</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>39</td>
+        <td>Ensure permissions on /etc/crontab are configured</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>40</td>
+        <td>Ensure permissions on /etc/cron.hourly are configured</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>41</td>
+        <td>Ensure permissions on /etc/cron.daily are configured</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>42</td>
+        <td>Ensure permissions on /etc/cron.weekly are configured</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>43</td>
+        <td>Ensure permissions on /etc/cron.monthly are configured</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>44</td>
+        <td>Ensure permissions on /etc/cron.d are configured</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>45</td>
+        <td>Ensure at/cron is restricted to authorized users</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+            <tr>
+        <td>46</td>
+        <td>Ensure SSH LogLevel is set to INFO</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>47</td>
+        <td>Ensure SSH X11 forwarding is disabled</td>
+        <td>FALSE</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+            <tr>
+        <td>48</td>
+        <td>Ensure SSH MaxAuthTries is set to 4 or less</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>49</td>
+        <td>Ensure SSH IgnoreRhosts is enabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>50</td>
+        <td>Ensure SSH HostbasedAuthentication is disabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>51</td>
+        <td>Ensure SSH root login is disabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>52</td>
+        <td>Ensure SSH PermitEmptyPasswords is disabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>53</td>
+        <td>Ensure SSH PermitUserEnvironment is disabled</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>54</td>
+        <td>Ensure only approved ciphers are used</td>
+        <td>FALSE</td>
+        <td>,For more information on the Counter mode algorithms, read RFC4344 at http://www.ietf.org/rfc/rfc4344.txt</td>
+      </tr>
+              
+            <tr>
+        <td>55</td>
+        <td>Ensure only approved MAC algorithms are used</td>
+        <td>FALSE</td>
+        <td>,More information on SSH downgrade attacks can be found here: http://www.mitls.org/pages/attacks/SLOTH</td>
+      </tr>
+              
+            <tr>
+        <td>56</td>
+        <td>Ensure SSH Idle Timeout Interval is configured</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>57</td>
+        <td>Ensure SSH LoginGraceTime is set to one minute or less</td>
+        <td>FALSE</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+            <tr>
+        <td>58</td>
+        <td>Ensure SSH access is limited</td>
+        <td>FALSE</td>
+        <td>,</td>
+      </tr>
+              
+            <tr>
+        <td>59</td>
+        <td>Ensure SSH warning banner is configured</td>
+        <td>FALSE</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+            <tr>
+        <td>60</td>
+        <td>Ensure password creation requirements are configured</td>
+        <td>FALSE</td>
+        <td>,</td>
+      </tr>
+              
+            <tr>
+        <td>61</td>
+        <td>Ensure lockout for failed password attempts is configured</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>62</td>
+        <td>Ensure password reuse is limited</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>63</td>
+        <td>Ensure password expiration is 90 days or less</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>64</td>
+        <td>Ensure minimum days between password changes is 7 or more</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>65</td>
+        <td>Ensure inactive password lock is 30 days or less</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+            <tr>
+        <td>66</td>
+        <td>Ensure default user umask is 027 or more restrictive</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>67</td>
+        <td>Ensure access to the su command is restricted</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+            <tr>
+        <td>68</td>
+        <td>Ensure permissions on /etc/passwd- are configured</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>69</td>
+        <td>Ensure permissions on /etc/group- are configured</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            <tr>
+        <td>70</td>
+        <td>Ensure all users' home directories exist</td>
+        <td>FALSE</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+          
+          
+          
+          
+          
+          
+          
+            <tr>
+        <td>71</td>
+        <td>Ensure all groups in /etc/passwd exist in /etc/group</td>
+        <td>FALSE</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+          
+          
+    <tr class="colortr">
+    <th colspan="4">NA Compliance Summary:</th>
+  </tr>
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            <tr>
+        <td>1</td>
+        <td>Ensure XD/NX support is enabled</td>
+        <td>NA</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+            <tr>
+        <td>2</td>
+        <td>Ensure local login warning banner is configured properly</td>
+        <td>NA</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+            <tr>
+        <td>3</td>
+        <td>Ensure remote login warning banner is configured properly</td>
+        <td>NA</td>
+        <td>CCE-NONE</td>
+      </tr>
+              
+            <tr>
+        <td>4</td>
+        <td>Ensure permissions on /etc/motd are configured</td>
+        <td>NA</td>
+        <td></td>
+      </tr>
+              
+          
+            <tr>
+        <td>5</td>
+        <td>Ensure permissions on /etc/issue.net are configured</td>
+        <td>NA</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            <tr>
+        <td>6</td>
+        <td>Ensure time synchronization is in use</td>
+        <td>NA</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+            <tr>
+        <td>7</td>
+        <td>Ensure IPv6 is disabled</td>
+        <td>NA</td>
+        <td>,</td>
+      </tr>
+              
+          
+          
+          
+          
+          
+            <tr>
+        <td>8</td>
+        <td>Ensure DCCP is disabled</td>
+        <td>NA</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>9</td>
+        <td>Ensure SCTP is disabled</td>
+        <td>NA</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>10</td>
+        <td>Ensure RDS is disabled</td>
+        <td>NA</td>
+        <td></td>
+      </tr>
+              
+            <tr>
+        <td>11</td>
+        <td>Ensure TIPC is disabled</td>
+        <td>NA</td>
+        <td></td>
+      </tr>
+              
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+  </table>
+
+</body>
+</html>
