@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+
+/*table#data tr th:first-child {
+  width: 12%;
+  min-width: 12%;
+  max-width: 12%;
+  word-break: break-all;
+}*/
+
+table#data tr th:third-child {
+  width: 10%;
+  min-width: 10%;
+  max-width: 10%;
+  word-break: break-all;
+}
+
+.colortr {
+  background-color: #D6EAF8;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Compliance Check Report</h2>
+<p>StarHub </p>
+
+
+
+<!-- nodata1 column contain fail data -->
+ 
+<!-- hostname contain pass data -->
+<!-- nodata2 contain error data -->
+<!-- benchmarkdata1 contain notselected data -->
+
+ 
+ 
+
+
+<!--   -->
+
+
+<!-- General Table -->
+<table id="general">
+  <tr class="colortr">
+    <th colspan="4">General Information:</th>
+  </tr>
+  <tr>
+    <th>Host Name:</th>
+    <td>WIN-N2VI2L191DQ</td>
+    <th>Executation Date:</th>
+    <td>06/21/2020 23:08:25</td>
+  </tr>
+  <tr>
+    <th>IP Address:</th>
+    <td>10.6.1.155</td>
+    <th>Benchmark Profiles</th>
+    <td>Level 1 - IIS 10</td>
+  </tr>
+  <tr>
+    <th>Not Selected:</th>
+    <td>26</td>
+    <th></th>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Error:</th>
+    <td>0</td>
+    <th></th>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Compliance Rules:</th>
+    <!-- <td>[{u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u"(L1) Ensure 'host headers' are on all sites", u'reference': u',http://technet.microsoft.com/en-us/library/cc753195%28WS.10%29.aspx,http://crypto.stanford.edu/dns/dns-rebinding.pdf,http://www.sslshopper.com/article-ssl-host-headers-in-iis-7.html,http://blogs.iis.net/thomad/archive/2008/01/25/ssl-certificates-on-sites-with-host-headers.aspx,https://www.iis.net/learn/get-started/whats-new-in-iis-10/wildcard-host-header-support', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.2_L1_Ensure_host_headers_are_on_all_sites', u'profiledata1': u'Level 1 - IIS 10', u'session': u'1.2', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u"(L1) Ensure 'directory browsing' is set to disabled", u'reference': u',http://technet.microsoft.com/en-us/library/cc725840%28WS.10%29.aspx,http://technet.microsoft.com/en-us/library/cc731109%28WS.10%29.aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.3_L1_Ensure_directory_browsing_is_set_to_disabled', u'profiledata1': u'Level 1 - IIS 10', u'session': u'1.3', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u"(L1) Ensure 'application pool identity' is configured for all application pools", u'reference': u',http://technet.microsoft.com/en-us/library/cc771170%28WS.10%29.aspx,http://learn.iis.net/page.aspx/140/understanding-built-in-user-and-group-accounts-in-iis-7/,http://learn.iis.net/page.aspx/624/application-pool-identities/,http://blogs.iis.net/tomwoolums/archive/2008/12/17/iis-7-0-application-pools.aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.4_L1_Ensure_application_pool_identity_is_configured_for_all_application_pools', u'profiledata1': u'Level 1 - IIS 10', u'session': u'1.4', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u"(L1) Ensure 'unique application pools' is set for sites", u'reference': u',http://technet.microsoft.com/en-us/library/cc753449%28WS.10%29.aspx,http://blogs.iis.net/tomwoolums/archive/2008/12/17/iis-7-0-application-pools.aspx,http://learn.iis.net/page.aspx/624/application-pool-identities/', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.5_L1_Ensure_unique_application_pools_is_set_for_sites', u'profiledata1': u'Level 1 - IIS 10', u'session': u'1.5', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u"(L1) Ensure 'application pool identity' is configured for anonymous user identity", u'reference': u',http://learn.iis.net/page.aspx/202/application-pool-identity-as-anonymous-user/,http://learn.iis.net/page.aspx/624/application-pool-identities/', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_1.6_L1_Ensure_application_pool_identity_is_configured_for_anonymous_user_identity', u'profiledata1': u'Level 1 - IIS 10', u'session': u'1.6', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u"(L1) Ensure 'forms authentication' require SSL", u'reference': u',http://technet.microsoft.com/en-us/library/cc771077(WS.10).aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.3_L1_Ensure_forms_authentication_require_SSL', u'profiledata1': u'Level 1 - IIS 10', u'session': u'2.3', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u"(L1) Ensure 'cookie protection mode' is configured for forms authentication", u'reference': u',http://technet.microsoft.com/en-us/library/cc731804%28WS.10%29.aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.5_L1_Ensure_cookie_protection_mode_is_configured_for_forms_authentication', u'profiledata1': u'Level 1 - IIS 10', u'session': u'2.5', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u"(L1) Ensure 'passwordFormat' is not set to clear", u'reference': u',http://www.iis.net/ConfigReference/system.webServer/management/authentication/credentials,http://msdn.microsoft.com/en-us/library/bb422401%28VS.90%29.aspx,https://docs.microsoft.com/en-us/dotnet/framework/whats-new/#v471', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_2.7_L1_Ensure_passwordFormat_is_not_set_to_clear', u'profiledata1': u'Level 1 - IIS 10', u'session': u'2.7', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u"(L1) Ensure 'deployment method retail' is set", u'reference': u',http://msdn.microsoft.com/en-US/library/ms228298%28VS.80%29.aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.1_L1_Ensure_deployment_method_retail_is_set', u'profiledata1': u'Level 1 - IIS 10', u'session': u'3.1', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure IIS HTTP detailed errors are hidden from displaying remotely', u'reference': u',http://technet.microsoft.com/en-us/library/dd391900%28WS.10%29.aspx,http://www.iis.net/configreference/system.webserver/httperrors', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.4_L1_Ensure_IIS_HTTP_detailed_errors_are_hidden_from_displaying_remotely', u'profiledata1': u'Level 1 - IIS 10', u'session': u'3.4', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u"(L1) Ensure 'cookies' are set with HttpOnly attribute", u'reference': u',https://tools.ietf.org/wg/httpstate/charters,https://www.owasp.org/index.php/HTTPOnly#Browsers_Supporting_HttpOnly,https://msdn.microsoft.com/en-us/library/ms533046.aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.7_L1_Ensure_cookies_are_set_with_HttpOnly_attribute', u'profiledata1': u'Level 1 - IIS 10', u'session': u'3.7', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u"(L1) Ensure 'MachineKey validation method - .Net 4.5' is configured", u'reference': u',http://www.iis.net/learn/get-started/whats-new-in-iis-8/iis-80-aspnet-configuration-management', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.9_L1_Ensure_MachineKey_validation_method_-_.Net_4.5_is_configured', u'profiledata1': u'Level 1 - IIS 10', u'session': u'3.9', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure global .NET trust level is configured', u'reference': u',http://technet.microsoft.com/en-us/library/cc772237(WS.10).aspx,http://msdn.microsoft.com/en-us/library/ms691448%28VS.90%29.aspx,Professional IIS 7 by Ken Schaefer, Jeff Cochran, Scott Forsyth, Rob Baugh, Mike Everest, Dennis Glendenning,http://support.microsoft.com/kb/2698981', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_3.10_L1_Ensure_global_.NET_trust_level_is_configured', u'profiledata1': u'Level 1 - IIS 10', u'session': u'3.10', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure Double-Encoded requests will be rejected', u'reference': u',http://www.iis.net/ConfigReference/system.webServer/security/requestFiltering/requestLimits,http://learn.iis.net/page.aspx/143/use-request-filtering/', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_4.5_L1_Ensure_Double-Encoded_requests_will_be_rejected', u'profiledata1': u'Level 1 - IIS 10', u'session': u'4.5', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u"(L1) Ensure 'HTTP Trace Method' is disabled", u'reference': u',http://www.kb.cert.org/vuls/id/867593,http://www.iis.net/ConfigReference/system.webServer/security/requestFiltering/verbs', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_4.6_L1_Ensure_HTTP_Trace_Method_is_disabled', u'profiledata1': u'Level 1 - IIS 10', u'session': u'4.6', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure Unlisted File Extensions are not allowed', u'reference': u',http://www.iis.net/ConfigReference/system.webServer/security/requestFiltering/requestLimits,http://www.iis.net/learn/manage/configuring-security/configure-request-filtering-in-iis', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_4.7_L1_Ensure_Unlisted_File_Extensions_are_not_allowed', u'profiledata1': u'Level 1 - IIS 10', u'session': u'4.7', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure Handler is not granted Write and Script/Execute', u'reference': u',http://technet.microsoft.com/en-us/library/dd391910%28WS.10%29.aspx,http://blogs.iis.net/thomad/archive/2006/11/05/quo-vadis-accessflags.aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_4.8_L1_Ensure_Handler_is_not_granted_Write_and_ScriptExecute', u'profiledata1': u'Level 1 - IIS 10', u'session': u'4.8', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u"(L1) Ensure 'notListedIsapisAllowed' is set to false", u'reference': u',http://technet.microsoft.com/en-us/library/dd378846%28WS.10%29.aspx,http://www.iis.net/ConfigReference/system.webServer/security/isapiCgiRestriction', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_4.9_L1_Ensure_notListedIsapisAllowed_is_set_to_false', u'profiledata1': u'Level 1 - IIS 10', u'session': u'4.9', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'pass', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u"(L1) Ensure 'notListedCgisAllowed' is set to false", u'reference': u',http://technet.microsoft.com/en-us/library/dd391919%28WS.10%29.aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_4.10_L1_Ensure_notListedCgisAllowed_is_set_to_false', u'profiledata1': u'Level 1 - IIS 10', u'session': u'4.10', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure SSLv2 is Disabled', u'reference': u',http://technet.microsoft.com/en-us/library/dn786419.aspx,http://technet.microsoft.com/en-us/library/dn786433.aspx,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_7.2_L1_Ensure_SSLv2_is_Disabled', u'profiledata1': u'Level 1 - IIS 10', u'session': u'7.2', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure SSLv3 is Disabled', u'reference': u',https://www.openssl.org/~bodo/ssl-poodle.pdf,http://technet.microsoft.com/en-us/library/dn786419.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786433.aspx,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_7.3_L1_Ensure_SSLv3_is_Disabled', u'profiledata1': u'Level 1 - IIS 10', u'session': u'7.3', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure TLS 1.0 is Disabled', u'reference': u',http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786419.aspx,http://technet.microsoft.com/en-us/library/dn786433.aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_7.4_L1_Ensure_TLS_1.0_is_Disabled', u'profiledata1': u'Level 1 - IIS 10', u'session': u'7.4', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure TLS 1.1 is Disabled', u'reference': u',http://technet.microsoft.com/en-us/library/dn786433.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786419.aspx,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx,https://community.qualys.com/thread/16565-is-there-a-reason-for-still-having-tlsv11-enabled', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_7.5_L1_Ensure_TLS_1.1_is_Disabled', u'profiledata1': u'Level 1 - IIS 10', u'session': u'7.5', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure TLS 1.2 is Enabled', u'reference': u',http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786419.aspx,http://technet.microsoft.com/en-us/library/dn786433.aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_7.6_L1_Ensure_TLS_1.2_is_Enabled', u'profiledata1': u'Level 1 - IIS 10', u'session': u'7.6', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure NULL Cipher Suites is Disabled', u'reference': u',https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786419.aspx,http://technet.microsoft.com/en-us/library/dn786433.aspx,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_7.7_L1_Ensure_NULL_Cipher_Suites_is_Disabled', u'profiledata1': u'Level 1 - IIS 10', u'session': u'7.7', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure DES Cipher Suites is Disabled', u'reference': u',https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786433.aspx,http://technet.microsoft.com/en-us/library/dn786419.aspx,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_7.8_L1_Ensure_DES_Cipher_Suites_is_Disabled', u'profiledata1': u'Level 1 - IIS 10', u'session': u'7.8', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure RC4 Cipher Suites is Disabled', u'reference': u',http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx,http://technet.microsoft.com/en-us/library/dn786433.aspx,http://technet.microsoft.com/en-us/library/dn786419.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_7.9_L1_Ensure_RC4_Cipher_Suites_is_Disabled', u'profiledata1': u'Level 1 - IIS 10', u'session': u'7.9', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure AES 128/128 Cipher Suite is Disabled', u'reference': u',http://technet.microsoft.com/en-us/library/dn786419.aspx,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786433.aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_7.10_L1_Ensure_AES_128128_Cipher_Suite_is_Disabled', u'profiledata1': u'Level 1 - IIS 10', u'session': u'7.10', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': u'fail', u'nodata1': u'N/A', u'nodata2': u'N/A', u'profiledata2': u'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_IIS_10', u'description': u'(L1) Ensure AES 256/256 Cipher Suite is Enabled', u'reference': u',http://technet.microsoft.com/en-us/library/dn786419.aspx,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786433.aspx', u'benchmarkdata1': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'benchmarkdata3': u'xccdf_org.cisecurity.benchmarks_benchmark_1.1.1_CIS_Microsoft_IIS_10_Benchmark', u'cisversion': u'1.1.1', u'detail': u'xccdf_org.cisecurity.benchmarks_rule_7.11_L1_Ensure_AES_256256_Cipher_Suite_is_Enabled', u'profiledata1': u'Level 1 - IIS 10', u'session': u'7.11', u'benchmarkdata2': u'CIS Microsoft IIS 10 Benchmark', u'date': u'06/21/2020 23:08:25', u'hostname': u'WIN-N2VI2L191DQ'}, {u'status': None, u'nodata1': u'Fail: 16', u'nodata2': u'Error: 0', u'profiledata2': None, u'description': None, u'reference': None, u'benchmarkdata1': u'Not Selected: 26', u'benchmarkdata3': None, u'cisversion': u'Unknown: 0', u'detail': None, u'profiledata1': None, u'session': None, u'benchmarkdata2': None, u'date': u'Total', u'hostname': u'Pass: 13'}, {u'status': None, u'nodata1': u'Score: 45%', u'nodata2': None, u'profiledata2': None, u'description': None, u'reference': None, u'benchmarkdata1': None, u'benchmarkdata3': None, u'cisversion': None, u'detail': None, u'profiledata1': None, u'session': None, u'benchmarkdata2': None, u'date': u'Actual Pass: 13.0', u'hostname': u'Maximum Possible: 29.0'}]</td> -->
+    <td>13 / 29</td>
+    <th></th>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Non-Compliance Rules:</th>
+    <td>16 / 29</td>
+    <th></th>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Informational:</th>
+    <td>0</td>
+    <th></th>
+    <td></td>
+  </tr>
+</table>
+</br>
+<!-- Data Table -->
+<table id="data">
+  <tr class="colortr">
+    <th style="width:7%">No.</th>
+    <th style="width:53%">Task</th>
+    <th style="width:10%">True/False</th>
+    <th style="width:30%">Remarks</th>
+  </tr>
+  <tr class="colortr">
+    <th colspan="4">Compliance Summary:</th>
+  </tr>
+            
+            <tr>
+        <td>1</td>
+        <td>(L1) Ensure 'directory browsing' is set to disabled</td>
+        <td>TRUE</td>
+        <td>,http://technet.microsoft.com/en-us/library/cc725840%28WS.10%29.aspx,http://technet.microsoft.com/en-us/library/cc731109%28WS.10%29.aspx</td>
+      </tr>
+              
+            <tr>
+        <td>2</td>
+        <td>(L1) Ensure 'application pool identity' is configured for all application pools</td>
+        <td>TRUE</td>
+        <td>,http://technet.microsoft.com/en-us/library/cc771170%28WS.10%29.aspx,http://learn.iis.net/page.aspx/140/understanding-built-in-user-and-group-accounts-in-iis-7/,http://learn.iis.net/page.aspx/624/application-pool-identities/,http://blogs.iis.net/tomwoolums/archive/2008/12/17/iis-7-0-application-pools.aspx</td>
+      </tr>
+              
+            <tr>
+        <td>3</td>
+        <td>(L1) Ensure 'unique application pools' is set for sites</td>
+        <td>TRUE</td>
+        <td>,http://technet.microsoft.com/en-us/library/cc753449%28WS.10%29.aspx,http://blogs.iis.net/tomwoolums/archive/2008/12/17/iis-7-0-application-pools.aspx,http://learn.iis.net/page.aspx/624/application-pool-identities/</td>
+      </tr>
+              
+          
+            <tr>
+        <td>4</td>
+        <td>(L1) Ensure 'forms authentication' require SSL</td>
+        <td>TRUE</td>
+        <td>,http://technet.microsoft.com/en-us/library/cc771077(WS.10).aspx</td>
+      </tr>
+              
+            <tr>
+        <td>5</td>
+        <td>(L1) Ensure 'cookie protection mode' is configured for forms authentication</td>
+        <td>TRUE</td>
+        <td>,http://technet.microsoft.com/en-us/library/cc731804%28WS.10%29.aspx</td>
+      </tr>
+              
+            <tr>
+        <td>6</td>
+        <td>(L1) Ensure 'passwordFormat' is not set to clear</td>
+        <td>TRUE</td>
+        <td>,http://www.iis.net/ConfigReference/system.webServer/management/authentication/credentials,http://msdn.microsoft.com/en-us/library/bb422401%28VS.90%29.aspx,https://docs.microsoft.com/en-us/dotnet/framework/whats-new/#v471</td>
+      </tr>
+              
+          
+            <tr>
+        <td>7</td>
+        <td>(L1) Ensure IIS HTTP detailed errors are hidden from displaying remotely</td>
+        <td>TRUE</td>
+        <td>,http://technet.microsoft.com/en-us/library/dd391900%28WS.10%29.aspx,http://www.iis.net/configreference/system.webserver/httperrors</td>
+      </tr>
+              
+          
+            <tr>
+        <td>8</td>
+        <td>(L1) Ensure 'MachineKey validation method - .Net 4.5' is configured</td>
+        <td>TRUE</td>
+        <td>,http://www.iis.net/learn/get-started/whats-new-in-iis-8/iis-80-aspnet-configuration-management</td>
+      </tr>
+              
+          
+            <tr>
+        <td>9</td>
+        <td>(L1) Ensure Double-Encoded requests will be rejected</td>
+        <td>TRUE</td>
+        <td>,http://www.iis.net/ConfigReference/system.webServer/security/requestFiltering/requestLimits,http://learn.iis.net/page.aspx/143/use-request-filtering/</td>
+      </tr>
+              
+            <tr>
+        <td>10</td>
+        <td>(L1) Ensure 'HTTP Trace Method' is disabled</td>
+        <td>TRUE</td>
+        <td>,http://www.kb.cert.org/vuls/id/867593,http://www.iis.net/ConfigReference/system.webServer/security/requestFiltering/verbs</td>
+      </tr>
+              
+          
+            <tr>
+        <td>11</td>
+        <td>(L1) Ensure Handler is not granted Write and Script/Execute</td>
+        <td>TRUE</td>
+        <td>,http://technet.microsoft.com/en-us/library/dd391910%28WS.10%29.aspx,http://blogs.iis.net/thomad/archive/2006/11/05/quo-vadis-accessflags.aspx</td>
+      </tr>
+              
+            <tr>
+        <td>12</td>
+        <td>(L1) Ensure 'notListedIsapisAllowed' is set to false</td>
+        <td>TRUE</td>
+        <td>,http://technet.microsoft.com/en-us/library/dd378846%28WS.10%29.aspx,http://www.iis.net/ConfigReference/system.webServer/security/isapiCgiRestriction</td>
+      </tr>
+              
+            <tr>
+        <td>13</td>
+        <td>(L1) Ensure 'notListedCgisAllowed' is set to false</td>
+        <td>TRUE</td>
+        <td>,http://technet.microsoft.com/en-us/library/dd391919%28WS.10%29.aspx</td>
+      </tr>
+              
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+  
+  
+  <tr class="colortr">
+    <th colspan="4">Non-Compliance Summary:</th>
+  </tr>
+              <tr>
+        <td>1</td>
+        <td>(L1) Ensure 'host headers' are on all sites</td>
+        <td>FALSE</td>
+        <td>,http://technet.microsoft.com/en-us/library/cc753195%28WS.10%29.aspx,http://crypto.stanford.edu/dns/dns-rebinding.pdf,http://www.sslshopper.com/article-ssl-host-headers-in-iis-7.html,http://blogs.iis.net/thomad/archive/2008/01/25/ssl-certificates-on-sites-with-host-headers.aspx,https://www.iis.net/learn/get-started/whats-new-in-iis-10/wildcard-host-header-support</td>
+      </tr>
+              
+          
+          
+          
+            <tr>
+        <td>2</td>
+        <td>(L1) Ensure 'application pool identity' is configured for anonymous user identity</td>
+        <td>FALSE</td>
+        <td>,http://learn.iis.net/page.aspx/202/application-pool-identity-as-anonymous-user/,http://learn.iis.net/page.aspx/624/application-pool-identities/</td>
+      </tr>
+              
+          
+          
+          
+            <tr>
+        <td>3</td>
+        <td>(L1) Ensure 'deployment method retail' is set</td>
+        <td>FALSE</td>
+        <td>,http://msdn.microsoft.com/en-US/library/ms228298%28VS.80%29.aspx</td>
+      </tr>
+              
+          
+            <tr>
+        <td>4</td>
+        <td>(L1) Ensure 'cookies' are set with HttpOnly attribute</td>
+        <td>FALSE</td>
+        <td>,https://tools.ietf.org/wg/httpstate/charters,https://www.owasp.org/index.php/HTTPOnly#Browsers_Supporting_HttpOnly,https://msdn.microsoft.com/en-us/library/ms533046.aspx</td>
+      </tr>
+              
+          
+            <tr>
+        <td>5</td>
+        <td>(L1) Ensure global .NET trust level is configured</td>
+        <td>FALSE</td>
+        <td>,http://technet.microsoft.com/en-us/library/cc772237(WS.10).aspx,http://msdn.microsoft.com/en-us/library/ms691448%28VS.90%29.aspx,Professional IIS 7 by Ken Schaefer, Jeff Cochran, Scott Forsyth, Rob Baugh, Mike Everest, Dennis Glendenning,http://support.microsoft.com/kb/2698981</td>
+      </tr>
+              
+          
+          
+            <tr>
+        <td>6</td>
+        <td>(L1) Ensure Unlisted File Extensions are not allowed</td>
+        <td>FALSE</td>
+        <td>,http://www.iis.net/ConfigReference/system.webServer/security/requestFiltering/requestLimits,http://www.iis.net/learn/manage/configuring-security/configure-request-filtering-in-iis</td>
+      </tr>
+              
+          
+          
+          
+            <tr>
+        <td>7</td>
+        <td>(L1) Ensure SSLv2 is Disabled</td>
+        <td>FALSE</td>
+        <td>,http://technet.microsoft.com/en-us/library/dn786419.aspx,http://technet.microsoft.com/en-us/library/dn786433.aspx,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29</td>
+      </tr>
+              
+            <tr>
+        <td>8</td>
+        <td>(L1) Ensure SSLv3 is Disabled</td>
+        <td>FALSE</td>
+        <td>,https://www.openssl.org/~bodo/ssl-poodle.pdf,http://technet.microsoft.com/en-us/library/dn786419.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786433.aspx,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx</td>
+      </tr>
+              
+            <tr>
+        <td>9</td>
+        <td>(L1) Ensure TLS 1.0 is Disabled</td>
+        <td>FALSE</td>
+        <td>,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786419.aspx,http://technet.microsoft.com/en-us/library/dn786433.aspx</td>
+      </tr>
+              
+            <tr>
+        <td>10</td>
+        <td>(L1) Ensure TLS 1.1 is Disabled</td>
+        <td>FALSE</td>
+        <td>,http://technet.microsoft.com/en-us/library/dn786433.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786419.aspx,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx,https://community.qualys.com/thread/16565-is-there-a-reason-for-still-having-tlsv11-enabled</td>
+      </tr>
+              
+            <tr>
+        <td>11</td>
+        <td>(L1) Ensure TLS 1.2 is Enabled</td>
+        <td>FALSE</td>
+        <td>,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786419.aspx,http://technet.microsoft.com/en-us/library/dn786433.aspx</td>
+      </tr>
+              
+            <tr>
+        <td>12</td>
+        <td>(L1) Ensure NULL Cipher Suites is Disabled</td>
+        <td>FALSE</td>
+        <td>,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786419.aspx,http://technet.microsoft.com/en-us/library/dn786433.aspx,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx</td>
+      </tr>
+              
+            <tr>
+        <td>13</td>
+        <td>(L1) Ensure DES Cipher Suites is Disabled</td>
+        <td>FALSE</td>
+        <td>,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786433.aspx,http://technet.microsoft.com/en-us/library/dn786419.aspx,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx</td>
+      </tr>
+              
+            <tr>
+        <td>14</td>
+        <td>(L1) Ensure RC4 Cipher Suites is Disabled</td>
+        <td>FALSE</td>
+        <td>,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx,http://technet.microsoft.com/en-us/library/dn786433.aspx,http://technet.microsoft.com/en-us/library/dn786419.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29</td>
+      </tr>
+              
+            <tr>
+        <td>15</td>
+        <td>(L1) Ensure AES 128/128 Cipher Suite is Disabled</td>
+        <td>FALSE</td>
+        <td>,http://technet.microsoft.com/en-us/library/dn786419.aspx,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786433.aspx</td>
+      </tr>
+              
+            <tr>
+        <td>16</td>
+        <td>(L1) Ensure AES 256/256 Cipher Suite is Enabled</td>
+        <td>FALSE</td>
+        <td>,http://technet.microsoft.com/en-us/library/dn786419.aspx,http://msdn.microsoft.com/en-us/library/aa374757%28v=vs.85%29.aspx,https://www.owasp.org/index.php/Testing_for_SSL-TLS_%28OWASP-CM-001%29,http://technet.microsoft.com/en-us/library/dn786433.aspx</td>
+      </tr>
+              
+          
+          
+    <tr class="colortr">
+    <th colspan="4">Informational Summary:</th>
+  </tr>
+                                                                                                                                                                                              </table>
+
+</body>
+</html>
